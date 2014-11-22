@@ -38,6 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'devise'
+
 gem 'simple_form'
 
 group :development, :test do
