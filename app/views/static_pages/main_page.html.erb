@@ -1,1 +1,28 @@
-this is the main page
+ <div class="page-header">
+  <h1>Welcome to Twipper</h1>
+  <h1><small>Hear me roar</small><h1>
+
+</div>
+
+
+<% if !user_signed_in? %>
+		<ul>
+			<button type="button" class="btn btn-default">
+				Sign Up
+ 	        	<%#= link_to "Sign Up", new_user_registration_path %> 
+	    </ul>
+
+	    <ul>
+	    	<button type="button" class="btn btn-default">
+				Sign In
+	        <%#= link_to "Sign In", new_user_session_path %>
+	    </ul>	
+<% else %>
+	    <li>
+	    	<%= link_to "New Tweet", new_tweet_path %>
+	    </li>
+
+	    <li>
+	    	<%= link_to "News Feed", tweets_path %>
+	    </li>
+<% end %>   	        
