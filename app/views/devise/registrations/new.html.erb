@@ -2,11 +2,11 @@
 
 
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'container'}) do |f| %>
   <%= f.error_notification %>
 
-<div class="jumbotron">
-	<div class="form-group" style="position: relative; left: 535px">
+<div class="jumbotron" style="opacity: 0.8"; width: 45%; margin-left: auto; margin-right: auto;>
+	<div class="form-group" style="position: relative; margin-right: auto; margin-left: auto; width: 40%;">
 		<h2>Sign up</h2>
 		  <div class="form-inputs">
 		    <%= f.input_field :email, required: true, autofocus: true, class: 'form-control', placeholder: 'email address', style: 'width: 200px' %>
