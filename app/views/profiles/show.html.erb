@@ -1,3 +1,11 @@
-This is the profile for <%= @profile.user.email %>
+<%# this is what is shown on the profile page %> 
 
-<%= image_tag @profile.pic %>
+<div class="media">
+  <a class="media-left media-middle" href="#">
+    <img data-src="..." alt="...">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Your face <%= @profile.user.email %></h4>
+    <%= image_tag @profile.pic %>
+  </div>
+</div>
